@@ -19,6 +19,6 @@ var urls = [
     '/images/image1.png',
     '/images/image2.png'
 ];
-var img = document.getElementById('slideshow');
-new ImageFlip(img, urls, 2500).start();
+var el = document.getElementById('slideshow');
+new ImageFlip(el, urls, 2500).start();
 ```
