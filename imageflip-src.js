@@ -1,25 +1,24 @@
-function ImageFlip(img_p, urls_p, time_p){
+function ImageFlip(p_el, p_urls, p_time){
 
-    var t;
-    var i = 0;
-    var time = time_p || 2500;
-    var urls = urls_p;
-    var img = img_p;
-    img.src = urls[0];
-
-    function flip() {
-        i = (i+1) % urls.length;
-        // http://www.ultramegatech.com/2008/12/reloading-images-using-javascript/
-        img.src = urls[i] + '?v=' + new Date().getTime();
-    }
+    var id, i,
+        time = p_time || 2500,
+        urls = p_urls,
+        el = p_el;
 
     function start() {
+        i = 0;
+        el.src = urls[i];
 
-        if(t) {
-            clearTimeout(t);
+        if(id) {
+            clearTimeout(id);
         }
 
-        t = setInterval(flip, time);
+        function flip(){
+            i = (i+1) % urls.length;
+            el.src = urls[i] + '?v=' + new Date().getTime();   // http://goo.gl/QtnmT
+        }
+
+        id = setInterval(flip, time);
     }
 
     return {
