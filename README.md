@@ -20,5 +20,5 @@ var urls = [
     '/images/image2.png'
 ];
 var img = document.getElementById('slideshow');
-new ImageFlip(img, urls).start();
+new ImageFlip(img, urls, 2500).start();
 ```
