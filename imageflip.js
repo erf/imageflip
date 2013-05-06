@@ -1,4 +1,4 @@
-function ImageFlip(p_el, p_urls, p_time){
+function ImageFlip(p_el, p_urls, p_time) {
 
     var id, i,
         time = p_time || 2500,
@@ -23,5 +23,5 @@ function ImageFlip(p_el, p_urls, p_time){
 
     return {
         start: start
-    }
+    };
 }
