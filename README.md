@@ -1,7 +1,7 @@
-imageflip
-=========
+ImageFlip.JS
+============
 
-minimal javascript slideshow
+A VERY minimal javascript slideshow library.
 
 # example
 
