@@ -8,12 +8,7 @@ var urls = [
     'image2.png'
 ];
 var el = document.getElementById('slideshow');
-var flip = imageflip(el, urls, 1000);
-flip.start(function(i){
-	// console.log(i);
-	// if(i===0){
-	// 	alert('done!');
-	// 	flip.stop();		
-	// }
-});
+imageflip(el, urls, 1000, function(i){
+	console.log(i);
+}).start();
 </script>
