@@ -4,11 +4,11 @@ imageflip.js
 A VERY minimal javascript slideshow library.
 
 # usage
-just call 'imageflip' with an element, an array of image urls, and a time in ms for updates, which returns an object.
+call 'imageflip' given an element, an array of urls, and a time (ms) - which returns an object.
 
-call start on that object with an optinal callback function each time flip is called with returned current index.
+call 'start' on that object with an optional callback function called (with index) each time an image is flipped.
 
-call stop to stop flipping and delete timer.
+call 'stop' to stop flipping and delete timer.
 
 # example
 see 'example/index.html'
