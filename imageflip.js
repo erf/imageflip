@@ -25,6 +25,6 @@ function imageflip(el, urls, t, cb){
     return o;
 }
 
-if(module){
+if(typeof module !== "undefined"){
     module.exports = imageflip;
 }
