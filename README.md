@@ -1,5 +1,5 @@
-imageflip.js
-============
+imageflip
+=========
 
 A minimal javascript slideshow library.
 
