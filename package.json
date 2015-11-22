@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/erf/imageflip.git"
   },
-  "keywords": [],
+  "keywords": ["slideshow", "gallery", "images", "image", "flip"],
   "author": "Erlend Fagerheim <erlendf80@gmail.com> (http://github.com/erf)",
   "license": "ISC",
   "bugs": {
