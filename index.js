@@ -1,7 +1,9 @@
+"use strict";
+
 function imageflip(el, urls, t, cb){
 
     var id, i=0, o = {};
-	
+
     o.start = function () {
         i = 0;
         el.src = urls[i];
@@ -10,7 +12,7 @@ function imageflip(el, urls, t, cb){
 
         function flip(){
             i = (i+1) % urls.length;
-            el.src = urls[i] + '?v=' + new Date().getTime();   // http://goo.gl/QtnmT            
+            el.src = urls[i] + '?v=' + new Date().getTime();   // http://goo.gl/QtnmT
             if(cb) { cb(i); }
         }
 
@@ -20,7 +22,7 @@ function imageflip(el, urls, t, cb){
     o.stop = function(){
         clearTimeout(id);
         id = null;
-    }
+    };
 
     return o;
 }
