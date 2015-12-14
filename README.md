@@ -5,7 +5,11 @@ A minimal javascript slideshow library.
 
 # Install
 ```
-npm install imageflip
+bower install imageflip --save
+```
+or
+```
+npm install imageflip --save
 ```
 
 # Usage
