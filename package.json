@@ -1,6 +1,6 @@
 {
   "name": "imageflip",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "imageflip - a minimal slideshow library",
   "main": "index.js",
   "directories": {
