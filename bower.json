@@ -1,0 +1,28 @@
+{
+  "name": "imageflip",
+  "description": "imageflip - a minimal slideshow library",
+  "main": "index.js",
+  "authors": [
+    "Erlend Fagerheim <erlendf80@gmail.com> (http://github.com/erf)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "slideshow",
+    "gallery",
+    "images",
+    "image",
+    "flip"
+  ],
+  "homepage": "https://github.com/erf/imageflip",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

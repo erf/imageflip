@@ -30,3 +30,4 @@ function imageflip(el, urls, t, cb){
 if(typeof module !== "undefined"){
     module.exports = imageflip;
 }
+
