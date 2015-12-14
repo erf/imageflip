@@ -4,13 +4,8 @@ imageflip
 A minimal javascript slideshow library.
 
 # Install
-```
-bower install imageflip --save
-```
-or
-```
-npm install imageflip --save
-```
+* [npm](http://npmjs.com/): `npm install imageflip`
+* [Bower](http://bower.io/): `bower install imageflip`
 
 # Usage
 ```
