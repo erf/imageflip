@@ -24,4 +24,4 @@ imageflip(el, urls, 1000, function(i){
 ```
 
 # Test
-Run `mocha`
+* [mocha](https://mochajs.org): `mocha`
