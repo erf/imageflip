@@ -4,7 +4,7 @@ function imageflip(el, urls, t, cb) {
 
 	let id, i = 0, o = {}
 
-	o.start = function () {
+	o.start = () => {
 		i = 0
 		el.src = urls[i]
 
@@ -21,7 +21,7 @@ function imageflip(el, urls, t, cb) {
 		}, t)
 	}
 
-	o.stop = function(){
+	o.stop = () => {
 		clearTimeout(id)
 		id = null
 	}
@@ -29,7 +29,7 @@ function imageflip(el, urls, t, cb) {
 	return o
 }
 
-if(typeof module !== "undefined"){
+if(typeof module !== "undefined") {
 	module.exports = imageflip
 }
 
