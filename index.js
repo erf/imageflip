@@ -2,7 +2,7 @@
 
 function imageflip(el, urls, t, cb) {
 
-	let id, i=0, o = {}
+	let id, i = 0, o = {}
 
 	o.start = function () {
 		i = 0
@@ -12,15 +12,13 @@ function imageflip(el, urls, t, cb) {
 			clearTimeout(id) 
 		}
 
-		function flip(){
+		id = setInterval(() => {
 			i = (i + 1) % urls.length
-			el.src = urls[i] + '?v=' + new Date().getTime() // http://goo.gl/QtnmT
+			el.src = urls[i] + '?v=' + Date.now()
 			if(cb) { 
-				cb(i) 
+				cb(i)
 			}
-		}
-
-		id = setInterval(flip, t)
+		}, t)
 	}
 
 	o.stop = function(){
