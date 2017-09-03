@@ -13,12 +13,10 @@ A minimal javascript slideshow library.
 <img id='slideshow' />
 <script src="../index.js"></script>
 <script>
-var urls = [ 'image0.png', 'image1.png', 'image2.png' ];
-var el = document.getElementById('slideshow');
+const urls = [ 'image0.png', 'image1.png', 'image2.png' ]
+const el = document.getElementById('slideshow')
 
-imageflip(el, urls, 1000, function(i){
-    console.log(i);
-}).start();
+imageflip(el, urls, 1000, i => { console.log(i) }).start()
 
 </script>
 ```
